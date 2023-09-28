@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+/* Modify the existing styles in your style.css file */
+body {
+  font-family: "Indie Flower", cursive;
+  background-color: pink; /* Light pink background color */
+  /* Additional styles for the body */
+}
+
+.welcome-message {
+  text-align: center;
+  padding: 20px;
+  background-color: pink; /* Adjust the background color as needed */
+}
+.welcome-message h3 {
+  font-size: 75px;
+}
+.welcome-message p {
+  font-size: 50px;
+  font-weight: bold;
+
+  background-color: pink; /* Set the background color to white */
+  padding: 10px; /* Add padding for better visibility */
+}
+/* Modify the existing styles in your style.css file */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px; /* Adjust the gap between images as needed */
+  margin: 20px auto; /* Center the grid and adjust margin as needed */
+  max-width: 500px; /* Set a maximum width for the grid */
+  text-align: center; /* Center inline-block elements horizontally */
+}
+
+.image-grid img {
+  width: 100%; /* Set the width to 100% to make them responsive */
+  max-width: 100%; /* Ensure images don't exceed their natural size */
+  height: auto;
+  border-radius: 8px; /* Optional: Add border radius for rounded corners */
+  display: block; /* Change to block to remove any extra spacing */
+}
+/* Add styles for the new About Me section */
+.about-me {
+  background-color: pink; /* Adjust the background color as needed */
+  text-align: center;
+  padding: 20px;
+}
+
+.about-me h2 {
+  font-size: 45px;
+}
+
+.about-me p {
+  font-size: 25px;
+  color: #333; /* Adjust the text color as needed */
+}
+
+html {
+  scroll-behavior: smooth;
+}
