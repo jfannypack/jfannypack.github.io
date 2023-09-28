@@ -26,27 +26,28 @@ body {
   padding: 20px;
 }
 
-/* Adjust the styles for the welcome message */
 .welcome-message {
   text-align: center;
   background-color: pink;
+  
 }
 
 .welcome-message h3 {
-  font-size: 60px; /* Adjust the font size as needed */
+  font-size: 60px;
 }
 
 .welcome-message p {
-  font-size: 30px; /* Adjust the font size as needed */
+  font-size: 30px;
   font-weight: bold;
   background-color: pink;
   padding: 10px;
+  margin-bottom: 10px; 
 }
 
 .about-me {
   background-color: pink;
   text-align: center;
-  padding: 20px;
+  padding: 40px;
 }
 
 .about-me h2 {
@@ -71,6 +72,13 @@ body {
   height: auto;
   border-radius: 8px;
   display: block;
+}
+.contact-me {
+    text-align: center;
+    margin-top: 20px; /* Adjust margin as needed */
+    font-size: 25px; /* Adjust the font size for the contact-me paragraph */
+    color: #555; /* Adjust the text color as needed */
+    padding-bottom: 20px;
 }
 
 html {
