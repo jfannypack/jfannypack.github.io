@@ -1,50 +1,50 @@
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
-/* Modify the existing styles in your style.css file */
+
 body {
   font-family: "Indie Flower", cursive;
-  background-color: pink; /* Light pink background color */
-  /* Additional styles for the body */
+  background-color: pink;
 }
 
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.welcome-message,
+.about-me,
+.image-grid {
+  padding: 20px;
+}
+
+/* Adjust the styles for the welcome message */
 .welcome-message {
   text-align: center;
-  padding: 20px;
-  background-color: pink; /* Adjust the background color as needed */
+  background-color: pink;
 }
+
 .welcome-message h3 {
-  font-size: 75px;
+  font-size: 60px; /* Adjust the font size as needed */
 }
+
 .welcome-message p {
-  font-size: 50px;
+  font-size: 30px; /* Adjust the font size as needed */
   font-weight: bold;
-
-  background-color: pink; /* Set the background color to white */
-  padding: 10px; /* Add padding for better visibility */
-}
-/* Modify the existing styles in your style.css file */
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px; /* Adjust the gap between images as needed */
-  margin: 20px auto; /* Center the grid and adjust margin as needed */
-  max-width: 500px; /* Set a maximum width for the grid */
-  text-align: center; /* Center inline-block elements horizontally */
+  background-color: pink;
+  padding: 10px;
 }
 
-.image-grid img {
-  width: 100%; /* Set the width to 100% to make them responsive */
-  max-width: 100%; /* Ensure images don't exceed their natural size */
-  height: auto;
-  border-radius: 8px; /* Optional: Add border radius for rounded corners */
-  display: block; /* Change to block to remove any extra spacing */
-}
-/* Add styles for the new About Me section */
 .about-me {
-  background-color: pink; /* Adjust the background color as needed */
+  background-color: pink;
   text-align: center;
   padding: 20px;
 }
@@ -55,7 +55,22 @@ body {
 
 .about-me p {
   font-size: 25px;
-  color: #333; /* Adjust the text color as needed */
+  color: #333;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  text-align: center;
+}
+
+.image-grid img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
 }
 
 html {
