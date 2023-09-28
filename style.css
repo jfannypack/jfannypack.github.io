@@ -5,10 +5,10 @@
   margin: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: "Indie Flower", cursive;
-  background-color: pink;
+  background: radial-gradient(ellipse at center, pink, #ff8c8c 110%);
+  margin: 0;
 }
 
 .container {
@@ -28,23 +28,24 @@ body {
 
 .welcome-message {
   text-align: center;
-  background-color: pink;
+  background: transparent; /* Update this line */
 }
 
 .welcome-message h3 {
   font-size: 60px;
+  color: black; /* Add this line */
 }
 
 .welcome-message p {
   font-size: 30px;
   font-weight: bold;
-  background-color: pink;
-  padding: 10px;
-  margin-bottom: 10px;
+  background: transparent; /* Add this line */
+  color: black; /* Add this line */
 }
 
+
 .about-me {
-  background-color: pink;
+  background-color: transparent;
   text-align: center;
   padding: 40px;
 }
