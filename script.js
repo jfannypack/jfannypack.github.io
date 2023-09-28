@@ -19,8 +19,23 @@ document.addEventListener("DOMContentLoaded", function () {
   // Remove all existing images from the grid
   imageGrid.innerHTML = "";
 
-  // Append the shuffled images back to the grid
-  images.forEach(function (image) {
-    imageGrid.appendChild(image);
+  // Append the shuffled images back to the grid with a smoother fade-in effect
+  images.forEach(function (image, index) {
+    image.style.opacity = 0;
+
+    // Use requestAnimationFrame with a quadratic easing function for a smoother animation
+    const fadeIn = () => {
+      let currentOpacity = parseFloat(image.style.opacity);
+      if (currentOpacity < 1) {
+        image.style.opacity =
+          currentOpacity + 0.01 * Math.pow(2, currentOpacity * 10);
+        requestAnimationFrame(fadeIn);
+      }
+    };
+
+    setTimeout(function () {
+      imageGrid.appendChild(image);
+      fadeIn();
+    }, index * 30); // Adjust the delay as needed for a smoother fade-in
   });
 });
